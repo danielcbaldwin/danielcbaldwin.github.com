@@ -63,10 +63,120 @@ td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author: 
+   Author: Daniel Baldwin
    ========================================================================== */
+a,
+a:link,
+a:active,
+a:visited {
+	text-decoration: none;
+	color: #83C203;
+}
 
+a:hover {
+	color: #626262;
+}
 
+h2 {
+	font: 400 34px/1px "Yanone Kaffeesatz";
+}
+
+#container {
+	width: 800px;
+	margin: 0 auto;
+}
+
+#container header {
+	height: 80px;
+	border-top: 4px solid #ccc;
+	overflow: hidden;
+	border-bottom: 4px dotted #ccc;
+	padding: 7px 0;
+}
+
+#container header h1 {
+	font: 700 58px/1px "Yanone Kaffeesatz";
+	float: left;
+}
+
+#container header h1 a {
+	color: #000;
+}
+
+#container header h1 a:hover {
+	color: #83C203;
+}
+
+#container header ul {
+	list-style: none;
+	float: right;
+	overflow: hidden;
+	height: 100%;
+}
+
+#container header ul li {
+	float: left;
+	height: 100%;
+}
+
+#container header ul li a {
+	padding: 5px 10px;
+	margin-right: 25px;
+	display: block;
+	border: 1px solid #CECECE;
+	-webkit-box-shadow: 2px 2px 0px 0px #e7e7e7;
+	-moz-box-shadow: 2px 2px 0px 0px #e7e7e7;
+	box-shadow: 2px 2px 0px 0px #e7e7e7;
+	height: 16px;
+	line-height: 16px;
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	color: #444;
+	margin-top: 10px;
+}
+
+#container header ul li a:hover {
+	background-color: #83C203;
+	color: #fff;
+}
+
+#container #main {
+	margin-top: 30px;
+}
+
+#posts .post header {
+	border: 0;
+	height: auto;
+}
+
+#posts .post h2 {
+	margin-bottom: 0;
+}
+
+#posts .post h2 a {
+	font: 400 34px "Yanone Kaffeesatz";
+}
+
+#posts .post time {
+	color: #999;
+}
+
+#posts .post footer {
+	margin: 0;
+	padding: 10px 0;
+	border-bottom: 2px dotted #ccc;
+	border-top: 2px dotted #ccc;
+	text-align: left;
+}
+
+footer {
+	margin: 80px 0 60px;
+	padding-top: 15px;
+	border-top: 4px dotted #ccc;
+	color: #626262;
+	text-align: right;
+}
 
 
 
