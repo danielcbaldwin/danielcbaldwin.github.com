@@ -1,5 +1,0 @@
----
-layout: default
-title: About Me
----
-I am a developer and techie.

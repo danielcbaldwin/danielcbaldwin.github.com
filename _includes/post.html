@@ -1,0 +1,17 @@
+<article class="post">
+	<header>
+		<h2><a href="{{ site.domain }}{{ post.url }}" title="Permalink: {{ post.title }}">{{ post.title }}</a></h2>
+		{% for category in post.categories %}
+			<a class="category" href="/categories/{{ category }}">{{ category | capitalize }}</a>
+		{% endfor %}
+		<time datetime="{{ post.date | date:"%Y-%m-%d" }}" pubdate>{{ post.date | date_to_string }}</time>
+	</header>
+	{% if is_single %}
+		{{ content }}
+	{% else %}
+		{{ post.content }}
+	{% endif %}
+	{% if is_single %}
+		<div id="disqus_thread"></div>
+	{% endif %}
+</article>

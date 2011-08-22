@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<h2 class="category">{{ page.title }}</h2>
+{% for post in site.categories[page.category] %}
+	{% assign post = page %}
+	{% include post.html %}
+{% endfor %}

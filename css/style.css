@@ -11,8 +11,8 @@ html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-
 body { margin: 0; font-size: 13px; line-height: 1.231; }
 body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #B4F531; color: #fff; text-shadow: none; }
+::selection { background: #B4F531; color: #fff; text-shadow: none; }
 
 a { color: #00e; }
 a:visited { color: #551a8b; }
@@ -78,7 +78,8 @@ a:hover {
 }
 
 h2 {
-	font: 400 34px/1px "Yanone Kaffeesatz";
+	font: 400 34px/40px "Yanone Kaffeesatz";
+	color: #83C203;
 }
 
 #container {
@@ -95,12 +96,23 @@ h2 {
 }
 
 #container header h1 {
-	font: 700 58px/1px "Yanone Kaffeesatz";
+	font: 700 58px/35px "Yanone Kaffeesatz";
 	float: left;
+	margin: 10px 0 0;
+	padding: 0;
 }
 
 #container header h1 a {
 	color: #000;
+/*	letter-spacing: 4px;*/
+}
+
+#container header h1 span {
+	display: block;
+	font-size: 18px;
+	color: #626262;
+	font-weight: 400;
+	letter-spacing: 8px;
 }
 
 #container header h1 a:hover {
@@ -116,12 +128,12 @@ h2 {
 
 #container header ul li {
 	float: left;
-	height: 100%;
+	height: 40px;
 }
 
 #container header ul li a {
 	padding: 5px 10px;
-	margin-right: 25px;
+	margin-right: 15px;
 	display: block;
 	border: 1px solid #CECECE;
 	-webkit-box-shadow: 2px 2px 0px 0px #e7e7e7;
@@ -136,33 +148,61 @@ h2 {
 	margin-top: 10px;
 }
 
+#container header ul li.rss-link a {
+	border: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	padding: 0;
+	margin: 16px 0 0;
+	height: 32px;
+	width: 32px;
+}
+
+#container header ul li.rss-link a:hover {
+	background-color: transparent;
+}
+
 #container header ul li a:hover {
 	background-color: #83C203;
 	color: #fff;
 }
 
 #container #main {
-	margin-top: 30px;
+/*	margin-top: 10px;*/
+	overflow: hidden;
 }
 
-#posts .post header {
+#container #main section .post {
+	margin-bottom: 40px;
+}
+
+#container #main section .post header {
 	border: 0;
 	height: auto;
 }
 
-#posts .post h2 {
-	margin-bottom: 0;
+#container #main section .post header a.category {
+	border: 2px solid #626262;
+	padding: 5px;
+	font-weight: bold;
+	margin-right: 7px;
+	color: #626262;
 }
 
-#posts .post h2 a {
+#container #main section .post header h2 {
+	margin-bottom: 15px;
+}
+
+/*#container #main section.listing .post h2 a {
 	font: 400 34px "Yanone Kaffeesatz";
-}
+}*/
 
-#posts .post time {
+#container #main section .post time {
 	color: #999;
 }
 
-#posts .post footer {
+#container #main section .post footer {
 	margin: 0;
 	padding: 10px 0;
 	border-bottom: 2px dotted #ccc;
@@ -170,22 +210,192 @@ h2 {
 	text-align: left;
 }
 
+#container #main section.single .post footer {
+	border-bottom: 0;
+}
+
+#container #main #pagination {
+	overflow: hidden;
+	margin: 30px auto 0;
+	width: auto;
+	display: table;
+}
+
+#container #main #pagination a,
+#container #main #pagination span {
+	float: left;
+	display: block;
+	padding: 5px 10px;
+	border: 1px solid #CECECE;
+	-webkit-box-shadow: 2px 2px 0px 0px #e7e7e7;
+	-moz-box-shadow: 2px 2px 0px 0px #e7e7e7;
+	box-shadow: 2px 2px 0px 0px #e7e7e7;
+	height: 16px;
+	line-height: 16px;
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	color: #444;
+	margin: 10px 5px;
+}
+
+#container #main #pagination a:hover {
+	background-color: #83C203;
+	color: #fff;
+}
+
+#container #main #pagination span {
+	background-color: #E8E6E6;
+}
+
+#container #main img {
+	margin: 15px;
+	position: relative;
+	float: left;
+}
+
+#container #main img#avatar {
+	margin: 0 15px 15px 0;
+}
+
+#container #main .project-list {
+	
+}
+
+#container #main .project-list li {
+	margin-bottom: 15px;
+}
+
+#container #main h3 {
+	border-bottom: 2px dotted #000;
+	font-size: 18px;
+}
+
+#saveForm {
+	padding: 5px 10px;
+	margin-right: 25px;
+	display: block;
+	border: 1px solid #CECECE;
+	-webkit-box-shadow: 2px 2px 0px 0px #e7e7e7;
+	-moz-box-shadow: 2px 2px 0px 0px #e7e7e7;
+	box-shadow: 2px 2px 0px 0px #e7e7e7;
+	height: 28px;
+	line-height: 16px;
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	color: #444;
+	margin-top: 10px;
+	background-color: #fff;
+}
+
+#saveForm:hover {
+	background-color: #83C203;
+	color: #fff;
+}
+
+#container #main .recaptchatable img {
+	margin: 0;
+	float: none;
+}
+
+#container #main #emf-form table {
+	width: 100%;
+}
+
+#container #main textarea {
+	width: 90%;
+	height: 200px;
+}
+
 footer {
-	margin: 80px 0 60px;
+	margin: 20px 0 60px;
 	padding-top: 15px;
 	border-top: 4px dotted #ccc;
 	color: #626262;
 	text-align: right;
+	overflow: hidden;
+}
+
+footer .left {
+	float: left;
+}
+
+footer .right {
+	float: right;
+}
+
+@media screen and (max-width: 1000px) {
+	#fork-on-github-ribbon {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 830px) {
+	body {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	#container {
+		width: 100%;
+	}
+	
+	#container header ul {
+		padding: 0;
+	}
+	
+	
+}
+
+@media screen and (max-width: 720px) {
+	#container header ul li.rss-link {
+		display: none;
+	}
 }
 
 
+@media screen and (max-width: 650px) {
+	#container header {
+		height: 130px;
+	}
+	
+	#container header h1 {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		width: 250px;
+	}
+	
+	#container header ul {
+		float: none;
+		padding: 0;
+		width: 355px;
+		margin: 7px auto 0;
+	}
+	
+	#container header ul li {
+		padding: 0 0 0 10px;
+	}
+	
+	#container header ul li a {
+		margin: 10px 0 0;
+	}
+}
 
-
-
-
-
-
-
+@media screen and (max-width: 480px) {
+	footer {
+		text-align: center;
+	}
+	
+	footer .left {
+		float: none;
+	}
+	
+	footer .right {
+		float: none;
+		margin-top: 15px;
+	}
+}
 
 
 
