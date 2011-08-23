@@ -214,6 +214,12 @@ h2 {
 	border-bottom: 0;
 }
 
+#container #main section.listing h2.category {
+	margin-bottom: 0;
+	padding-bottom: 5px;
+	border-bottom: 4px solid #CCC;
+}
+
 #container #main #pagination {
 	overflow: hidden;
 	margin: 30px auto 0;
