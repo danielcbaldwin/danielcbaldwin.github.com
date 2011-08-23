@@ -8,7 +8,7 @@ module Jekyll
     def initialize(tag_name, text, token)
       super
       @text           = text
-      @cache_disabled = true
+      @cache_disabled = false
       @cache_folder   = File.expand_path "../_gist_cache", File.dirname(__FILE__)
     end
 
@@ -24,8 +24,8 @@ module Jekyll
     end
 
     def html_output_for(script_url, code)
-      #code = CGI.escapeHTML code
-      "<script src='#{script_url}'></script>"
+      code = CGI.escapeHTML code
+      "<script src='#{script_url}'></script><noscript><pre><code>#{code}</code></pre></noscript>"
     end
 
     def script_url_for(gist_id, filename)

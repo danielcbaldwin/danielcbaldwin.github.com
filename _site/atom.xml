@@ -4,7 +4,7 @@
  <title>Daniel Baldwin</title>
  <link href="http://danielcbaldwin.com/atom.xml" rel="self"/>
  <link href="http://danielcbaldwin.com/"/>
- <updated>2011-08-22T21:58:45-06:00</updated>
+ <updated>2011-08-22T22:04:34-06:00</updated>
  <id>http://danielcbaldwin.com/</id>
  <author>
    <name>Daniel Baldwin</name>
@@ -18,7 +18,7 @@
    <updated>2010-09-28T00:00:00-06:00</updated>
    <id>http://danielcbaldwin.com/technology/2010/09/28/php-function-to-check-if-string-is-serialized-data</id>
    <content type="html">&lt;p&gt;A nice function taken from WordPress that allows you to check if a string is serialized. This is handy because for some weird reason it isn't enough that unserialize() returns false but it also has to throw a notice. Using this function helps you to avoid the whole notices issue.
- &lt;script src='https://gist.github.com/1117347.js?file='&gt;&lt;/script&gt;&lt;/p&gt;
+ &lt;script src='https://gist.github.com/1117347.js?file='&gt;&lt;/script&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;You are being &amp;lt;a href=&amp;quot;https://raw.github.com/gist/1117347/&amp;quot;&amp;gt;redirected&amp;lt;/a&amp;gt;.&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -35,6 +35,8 @@
 
 &lt;script src='https://gist.github.com/373211.js?file='&gt;&lt;/script&gt;
 
+
+&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;You are being &amp;lt;a href=&amp;quot;https://raw.github.com/gist/373211/&amp;quot;&amp;gt;redirected&amp;lt;/a&amp;gt;.&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
 
 &lt;p&gt;I find that I like to call the plugin after the site, e.g. jquery.danielbaldwin.js, and I name the function accordingly. I have found that having all the javascript for a site in one object has helped me to build sites that are more complex, can have persistent variables easily, I can set settings that can be changed just by changing a 1 to a 0, and I feel like my code within the object becomes so much cleaner and more legible.&lt;/p&gt;
 </content>
