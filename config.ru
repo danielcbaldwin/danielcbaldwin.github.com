@@ -7,6 +7,8 @@
 # 
 # run Rack::Jekyll.new
 
+require 'rack'
+require 'rack/contrib/try_static'
 require "rack/rewrite"
 
 use Rack::Rewrite do
@@ -16,5 +18,6 @@ end
 use ::Rack::Static, 
   :root => "_site",    # or _site/ where *.html are generated
   :urls => %w[/]        # match all requests
+  :try => ['.html', 'index.html', '/index.html'] # try these postfixes sequentially
 # otherwise 404 NotFound
 run lambda { [404, {'Content-Type' => 'text/plain'}, ['whoops! Not Found']]}
