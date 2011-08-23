@@ -22,5 +22,7 @@ use ::Rack::TryStatic,
 # otherwise 404 NotFound
 errorFile='_site/404/index.html'
 run lambda { [404, {
-                "Content-Type"   => "text/html"
+                "Last-Modified"  => File.mtime(errorFile).httpdate,
+                "Content-Type"   => "text/html",
+                "Content-Length" => File.size(errorFile).to_s
             }, File.read(errorFile)] }
