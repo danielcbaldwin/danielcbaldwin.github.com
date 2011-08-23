@@ -256,6 +256,10 @@ h2 {
 
 #container #main img#avatar {
 	margin: 0 15px 15px 0;
+	border: 1px solid #CECECE;
+	-webkit-box-shadow: 2px 2px 0px 0px #e7e7e7;
+	-moz-box-shadow: 2px 2px 0px 0px #e7e7e7;
+	box-shadow: 2px 2px 0px 0px #e7e7e7;
 }
 
 #container #main .project-list {
@@ -391,8 +395,13 @@ footer .right {
 		display: none;
 	}
 	
+	#container #main img#avatar {
+		width: 150px;
+	}
+	
 	footer {
 		text-align: center;
+		margin-bottom: 10px;
 	}
 	
 	footer .left {
