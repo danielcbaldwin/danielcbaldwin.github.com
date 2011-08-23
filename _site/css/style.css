@@ -383,6 +383,14 @@ footer .right {
 }
 
 @media screen and (max-width: 480px) {
+	#container header ul li {
+		padding: 0 0 0 5px;
+	}
+	
+	#container header ul li a span {
+		display: none;
+	}
+	
 	footer {
 		text-align: center;
 	}
