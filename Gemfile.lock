@@ -26,6 +26,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  rack
   rack-contrib
   rack-jekyll
   rack-rewrite
