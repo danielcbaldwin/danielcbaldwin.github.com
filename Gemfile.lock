@@ -14,6 +14,8 @@ GEM
     maruku (0.6.0)
       syntax (>= 1.0.0)
     rack (1.2.3)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
     rack-jekyll (0.3.7)
       jekyll (~> 0.6.2)
       rack (~> 1.2.1)
@@ -24,5 +26,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  rack-contrib
   rack-jekyll
   rack-rewrite
