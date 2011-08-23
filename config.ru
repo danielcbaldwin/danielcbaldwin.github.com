@@ -7,7 +7,6 @@
 # 
 # run Rack::Jekyll.new
 
-require 'rack'
 require 'rack/contrib/try_static'
 require "rack/rewrite"
 
