@@ -11,7 +11,8 @@
   <meta name="description" content="">
   <meta name="author" content="">
 	<link rel="self" type="application/atom+xml" href="http://danielcbaldwin-blog.heroku.com/atom.xml"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	  <meta name="apple-mobile-web-app-capable" content="yes" />
 	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700' rel='stylesheet' type='text/css'>
 	
 	<link rel="stylesheet" href="/css/style.css">
@@ -60,7 +61,7 @@
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'danielbaldwinblog'; // required: replace example with your forum shortname
 	
-	var disqus_developer = location.host.match(/\.dev$|^localhost/) ? 1 : 0;
+	var disqus_developer = location.host.match(/\.dev$|^localhost|\.heroku\.com$/) ? 1 : 0;
 	
     // The following are highly recommended additional parameters. Remove the slashes in front to use.
     // var disqus_identifier = 'unique_dynamic_id_1234';
