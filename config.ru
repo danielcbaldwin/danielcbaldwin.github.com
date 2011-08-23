@@ -14,7 +14,7 @@ require "rack/contrib/try_static"
 #   r302 '/clickability', '/projects/clickability'
 # end
 
-use ::Rack::Static, 
+use ::Rack::TryStatic, 
   :root => "_site",												# or _site/ where *.html are generated
   :urls => %w[/],												# match all requests
   :try => ['.html', 'index.html', '/index.html']				# try these postfixes sequentially
