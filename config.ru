@@ -8,7 +8,6 @@
 # run Rack::Jekyll.new
 require "rack"
 require "rack/contrib/try_static"
-require 'mime/types'
 require "rack/rewrite"
 
 use Rack::Rewrite do
@@ -23,6 +22,5 @@ use ::Rack::TryStatic,
 # otherwise 404 NotFound
 errorFile='_site/404/index.html'
 run lambda { [404, {
-                "Content-Type"   => "text/html",
-                "Content-Length" => File.size(errorFile).to_s
+                "Content-Type"   => "text/html"
             }, File.read(errorFile)] }
