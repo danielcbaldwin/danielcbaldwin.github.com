@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Daniel Baldwin</title>
+ <link href="http://danielcbaldwin.com/atom.xml" rel="self"/>
+ <link href="http://danielcbaldwin.com/"/>
+ <updated>2011-08-22T18:05:08-06:00</updated>
+ <id>http://danielcbaldwin.com/</id>
+ <author>
+   <name>Daniel Baldwin</name>
+   <email>daniel@thebaldw.in</email>
+ </author>
+
+ 
+ <entry>
+   <title>A handy function for PHP that checks if a string is actually something that has been serialized</title>
+   <link href="http://danielcbaldwin.com/technology/2010/09/28/php-function-to-check-if-string-is-serialized-data/"/>
+   <updated>2010-09-28T00:00:00-06:00</updated>
+   <id>http://danielcbaldwin.com/technology/2010/09/28/php-function-to-check-if-string-is-serialized-data</id>
+   <content type="html">&lt;p&gt;A nice function taken from WordPress that allows you to check if a string is serialized. This is handy because for some weird reason it isn't enough that unserialize() returns false but it also has to throw a notice. Using this function helps you to avoid the whole notices issue.
+ &lt;script src='https://gist.github.com/1117347.js?file='&gt;&lt;/script&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;You are being &amp;lt;a href=&amp;quot;https://raw.github.com/gist/1117347/&amp;quot;&amp;gt;redirected&amp;lt;/a&amp;gt;.&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Website as a jQuery Plugin</title>
+   <link href="http://danielcbaldwin.com/technology/2009/07/01/website-as-a-jquery-plugin/"/>
+   <updated>2009-07-01T00:00:00-06:00</updated>
+   <id>http://danielcbaldwin.com/technology/2009/07/01/website-as-a-jquery-plugin</id>
+   <content type="html">&lt;p&gt;I recently had to build a site that ran mainly off of jQuery and I had the whole thing working from one script.js file that just had a lot of functions in it with some global functions defined at the top. The more I looked at this mess of a file the more I felt disappointed with myself that I had allowed myself to code so horribly.&lt;/p&gt;
+
+&lt;p&gt;So I went on a mission to turn the entire site into an object. I tried many different ways, including Javascript’s built in prototyping, but nothing seemed to turn out as nicely as I would have hoped. So I had the crazy idea of turning the entire site’s code into a jQuery plugin. Well it has worked out very well and even though it is a it of a weird thing to do I have taken to making site that use a lot of javascript into jQuery plugins.&lt;/p&gt;
+
+&lt;p&gt;The problem for me is that what was outlined on the jQuery documentation wasn’t all that helpful and I found that using existing plugins to figure out how the plugins were being built was a lot more helpful but also confusing as there seems to be a nearly unlimited amount of ways to make a plugin. So after searching around for a while and a bunch of trial and error this is what I ended up with:&lt;/p&gt;
+
+&lt;script src='https://gist.github.com/373211.js?file='&gt;&lt;/script&gt;
+
+
+&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;You are being &amp;lt;a href=&amp;quot;https://raw.github.com/gist/373211/&amp;quot;&amp;gt;redirected&amp;lt;/a&amp;gt;.&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
+
+&lt;p&gt;I find that I like to call the plugin after the site, e.g. jquery.danielbaldwin.js, and I name the function accordingly. I have found that having all the javascript for a site in one object has helped me to build sites that are more complex, can have persistent variables easily, I can set settings that can be changed just by changing a 1 to a 0, and I feel like my code within the object becomes so much cleaner and more legible.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>
