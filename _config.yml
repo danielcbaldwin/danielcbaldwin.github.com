@@ -13,10 +13,10 @@ pygments:       false
 markdown:       rdiscount
 permalink:      pretty
 
-domain:         http://localhost:4000
+domain:         http://danielcbaldwin-blog.heroku.com
 paginate:       5
 
 disqus:
     id:         danielbaldwinblog
 
-exclude:        ["colors.txt", "CNAME", "404.html", "config.ru", ".gems", "contact-me.html_old"]
+exclude:        ["colors.txt", "CNAME", "config.ru", ".gems", "contact-me.html_old"]

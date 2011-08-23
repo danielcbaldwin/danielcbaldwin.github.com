@@ -8,11 +8,12 @@
 # run Rack::Jekyll.new
 require "rack"
 require "rack/contrib/try_static"
-# require "rack/rewrite"
-# 
-# use Rack::Rewrite do
-#   r302 '/clickability', '/projects/clickability'
-# end
+require 'mime/types'
+require "rack/rewrite"
+
+use Rack::Rewrite do
+  r302 '/clickability', '/projects/clickability'
+end
 
 use ::Rack::TryStatic, 
   :root => "_site",												# or _site/ where *.html are generated
@@ -20,4 +21,9 @@ use ::Rack::TryStatic,
   :try => ['.html', 'index.html', '/index.html']				# try these postfixes sequentially
 
 # otherwise 404 NotFound
-run lambda { [404, {'Content-Type' => 'text/plain'}, ['whoops! Not Found']]}
+errorFile='_site/404/index.html'
+run lambda { [404, {
+                "Last-Modified"  => File.mtime(errorFile).httpdate,
+                "Content-Type"   => "text/html",
+                "Content-Length" => File.size(errorFile).to_s
+            }, File.read(errorFile)] }
