@@ -9,6 +9,7 @@
 require "rack"
 require "rack/contrib/try_static"
 require "rack/rewrite"
+require 'sinatra'
 
 use Rack::Rewrite do
   r302 '/clickability', '/projects/clickability'

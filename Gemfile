@@ -1,5 +1,8 @@
 source :rubygems
 gem "rack"
-gem "rack-jekyll"
 gem "rack-rewrite"
 gem "rack-contrib"
+gem "sinatra"
+gem "liquid"
+gem "pony"
+gem "active_support"
