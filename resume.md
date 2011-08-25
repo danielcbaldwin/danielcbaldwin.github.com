@@ -40,13 +40,15 @@ Chrome extension for the Clickability platform. Used to make repetative tasks ea
 
 **Director of Technical Services, Axis41**<br />
 _November 2009 – Present_
+I am currently in charge of a team of 13 developers. I have to scope new projects, make sure that deadlines are being met, make sure that client's needs are being met, and that the development team is happy and has what they need to be productive. I have worked hard to setup processes and infastructure to make us a better more agile development team as well as help the team to feel like a recognized individual even though we have been growing and expanding the team quickly. I also keep a close eye on the quality of work and make sure that the developers on my team always go the extra mile to give a bit more to our clients.
 
 **Sr Web Developer, Axis41**<br />
-_May 2008 – November 2009_
+_May 2008 – November 2009_<br />
+Axis41 is a fast paced agency that has some really large clients and fast deadlines. I was involved with many projects for clients such as FranklinCovey, Novell, Ciena, and O.C. Tanner utilizing technologies like MySQL, ASP.Net, Java, Ruby, PHP, and some Objective-C. I brought the Evergreen framework to the company and played a key roll in getting it to become our framework of choice when building new projects. With Evergreen the development team has been able to grow alot and take on larget projects while being able to turn them around at a quicker pace. I have also played a big roll in scoping and architecting projects at Axis41.
 
 **Software Engineer, Assessments.com**<br />
 _July 2007 – May 2008_<br />
-Assessments.com is a fast growing company with great people working there. I work on a team with 3 other developers working with ASP, AJAX, CSS, Javascript and MSSQL. We create varying types of assessments mainly for government agencies such as jails and courts. The assessment tools that we built help courts and jails decide what to do with offenders such as how to best help them, if they are likely to re-offend and if they need to stay longer in jail. I work with multiple accounts at the same time on a daily basis facing tight deadlines constantly. It is a great environment and a lot of fun to work with different people all over the state.
+Assessments.com is a fast growing company with great people working there. I worked on a team with 3 other developers working with ASP, AJAX, CSS, Javascript and MSSQL. We created varying types of assessments mainly for government agencies such as jails and courts. The assessment tools that we built help courts and jails decide what to do with offenders such as how to best help them, if they are likely to re-offend and if they need to stay longer in jail. I worked with multiple accounts at the same time on a daily basis facing tight deadlines constantly. It is a great environment and a lot of fun to work with different people all over the country.
 
 **Sr. Web Developer, ContagiousNET**<br />
 _July 2006 – June 2007_<br />
@@ -75,7 +77,7 @@ Currently taking generals for my Computer Science major. After my generals are c
 
 **Macromedia University**<br />
 _2000 – 2001_<br />
-This was a one year University course that taught about Macromedia's products including Fireworks, Dreamweaver, Freehand, and Flash. This course also taught access databases, Xml, HTML, Perl, Visual Basic, Optimizing websites, and much
+This was a one year University course that taught about Macromedia's products including Fireworks, Dreamweaver, Freehand, and Flash. This course also taught access databases, Xml, HTML, Perl, Visual Basic, Optimizing websites, and much more.
 
 **Utah State University**<br />
 _2000 – 2001_<br />
