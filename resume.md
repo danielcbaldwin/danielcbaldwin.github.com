@@ -4,12 +4,15 @@ layout: default
 ##Resume##
 ###Summary###
 
-My Objective is to continue developing my skills and abilities to provide valuable services to an ever changing computer industry. I want to find employment where I can learn and grow in skills and abilities while helping the company that I work for to grow and benefit as a result of the work I am asked to perform. I love it when I am put against hard problems and am able to work them out to the benefit of the company that I am a part of.
+I am a passionate programmer in love with all things programming. I love learning new languages, frameworks, tools and approaches to overcome problems. I am always interested in new ways to stretch myself, learn more, and be the best that I can be. I love it when I am put against hard problems and am able to work them out to my benefit and to the benefit of the company that I am a part of.
 
 ###Specialties###
 
 **Languages**<br />
 HTML(5), XHTML, PHP, MySQL, Javascript, CSS(3), ASP, Ruby, Java, ActionScript, Objective-C, SQL, AppleScript
+
+**Content Management Systems**<br />
+Joomla, Wordpress, Clickability, RedDot
 
 **Frameworks**<br />
 Ruby on Rails, jQuery, Evergreen, Zend, Nodejs, Sinatra, Jekyll, Expressjs, Wordpress
@@ -18,7 +21,7 @@ Ruby on Rails, jQuery, Evergreen, Zend, Nodejs, Sinatra, Jekyll, Expressjs, Word
 Visual Source Safe, GIT, Mercurial, SVN
 
 **Tools**<br />
-TextMate, Eclipse, Netbeans, jEdit, Coda, Dreamweaver, XCode, MySQL, MongoDB, SQLite, MSSQL, Firebug
+TextMate, Eclipse, Netbeans, jEdit, Kod, Sublime 2, Coda, Dreamweaver, XCode, MySQL, MongoDB, SQLite, MSSQL, Firebug
 
 **Environments**<br />
 OS X, Linux, Windows, Amazon EC2
@@ -28,6 +31,10 @@ OS X, Linux, Windows, Amazon EC2
 **Creator, Evergreen**<br />
 _[https://github.com/naturalcodeproject/Evergreen](https://github.com/naturalcodeproject/Evergreen)_<br />
 A PHP MVC framework that is intended to be fully featured, lightweight, and designed to be as close to using native PHP as possible.
+
+**Creator, Clickability Chrome Extension**<br />
+_[https://github.com/naturalcodeproject/Evergreen](https://github.com/naturalcodeproject/Evergreen)_<br />
+Chrome extension for the Clickability platform. Used to make repetative tasks easier as well as give quick access to resourses.
 
 ###Experience###
 
