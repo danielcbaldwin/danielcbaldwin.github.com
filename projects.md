@@ -18,6 +18,6 @@ This is a listing of some of the projects that I am currently working on or have
 
 	<li>
 		<a href="//frompl.us" target="_blank">Frompl.us</a>
-		<div class="description">Save time on social media posting! This app will push Google+ posts to your Facebook account. Download our free, mobile friendly beta version today!</div>
+		<div class="description">Save time on social media posting! This app will push Google+ posts to your Facebook account without having to install anything. This even works using the Google+ Mobile application.</div>
 	</li>
 </ul>
