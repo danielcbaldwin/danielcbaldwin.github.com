@@ -24,9 +24,9 @@ end
 
 get '/*' do 
   path = File.join(static_path, params[:splat])
-  if FileTest.exists?(path) && !File.directory? path
+  if FileTest.exists?(path) && !File.directory?(path)
     File.read(path)
-  elseif File.directory? path && FileTest.exists?(File.join(path, 'index.html'))
+  elseif File.directory?(path) && FileTest.exists?(File.join(path, 'index.html'))
     File.read(File.join(path, 'index.html'))
   else
     raise not_found
