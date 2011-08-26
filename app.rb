@@ -1,10 +1,10 @@
 require 'sinatra'
 require 'RMagick'
 
-static_path = Proc.new {File.join(root, '_site')}
+static_path = File.join(root, '_site')
 
 set :static, true
-set :public, static_path
+set :public, Proc.new {static_path}
 
 imagedir = "#{static_path}/img"
 
