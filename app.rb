@@ -19,9 +19,22 @@ not_found do
 end
 
 get '/' do
-  #File.read(File.join(static_path, 'index.html'))
   send_file File.join(static_path, 'index.html')
 end
+
+get '/*' do
+  path = File.join(static_path, params[:splat])
+  if FileTest.exists?(path)
+    send_file path
+  elseif FileTest.exists?(path + '.html')
+    send_file path + '.html'
+  elseif FileTest.exists?(File.join(path, 'index.html'))
+    send_file File.join(path, 'index.html')
+  else
+    raise not_found
+  end
+end
+
 # 
 # get '/*' do 
 #   path = File.join(static_path, params[:splat])
