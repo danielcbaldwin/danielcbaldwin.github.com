@@ -9,7 +9,8 @@ set :public, Proc.new {static_path}
 imagedir = "#{static_path}/img"
 
 before do
-  response.headers['Cache-Control'] = 'public, max-age=31557600' # 1 year
+  #response.headers['Cache-Control'] = 'public, max-age=31557600' # 1 year
+  cache_control :public, :max_age => 31557600
 end
 
 not_found do
@@ -19,6 +20,17 @@ end
 
 get '/' do
   File.read(File.join(static_path, 'index.html'))
+end
+
+get '/*' do 
+  path = File.join(static_path, params[:splat])
+  if FileTest.exists?(File.join(static_path, params[:splat]))
+    File.read(path)
+  elseif FileTest.exists?(File.join(path, 'index.html'))
+    File.read(File.join(path, 'index.html'))
+  else
+    raise not_found
+  end
 end
 
 get "/image/*/to/*" do
