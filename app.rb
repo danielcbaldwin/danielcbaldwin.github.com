@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'RMagick'
 
-static_path = File.join(root, '_site')
+static_path = './_site'
 
 set :static, true
 set :public, Proc.new {static_path}
