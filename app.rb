@@ -1,7 +1,8 @@
 require 'sinatra'
 require 'RMagick'
 
-static_path = './_site'
+static_path = "./_site"
+static_postfix = ['.html', '.htm', '/index.html', '/index.htm']
 
 set :static, true
 set :public, Proc.new {static_path}
@@ -18,6 +19,19 @@ not_found do
 	File.read(errorFile)
 end
 
+get "/image/*/to/*" do
+	if FileTest.exists?(imagedir + "/" + params[:splat][0])
+		im = Magick::ImageList.new(imagedir + "/" + params[:splat][0])
+		content_type im.mime_type
+		im.change_geometry!(params[:splat][1]) { |cols, rows, img|
+			img.resize!(cols, rows)
+		}
+		im.to_blob
+	else
+		raise not_found
+	end
+end
+
 get '/' do
   send_file File.join(static_path, 'index.html')
 end
@@ -26,11 +40,17 @@ get '/*' do
   path = File.join(static_path, params[:splat])
   if FileTest.exists?(path) && !File.directory?(path)
     send_file path
-  elseif FileTest.exists?(path + '.html')
-    send_file path + '.html'
-  elseif FileTest.exists?(File.join(path, 'index.html'))
-    send_file File.join(path, 'index.html')
   else
+    static_postfix.each do |ext|
+      if ext[0,1] == "/"
+        path = File.join(static_path, params[:splat], ext)
+      else
+        path = File.join(static_path, params[:splat]) + ext
+      end
+      if FileTest.exists?(path) && !File.directory?(path)
+        send_file path
+      end
+    end
     raise not_found
   end
 end
@@ -46,16 +66,3 @@ end
 #     raise not_found
 #   end
 # end
-
-get "/image/*/to/*" do
-	if FileTest.exists?(imagedir + "/" + params[:splat][0])
-		im = Magick::ImageList.new(imagedir + "/" + params[:splat][0])
-		content_type im.mime_type
-		im.change_geometry!(params[:splat][1]) { |cols, rows, img|
-			img.resize!(cols, rows)
-		}
-		im.to_blob
-	else
-		raise not_found
-	end
-end
