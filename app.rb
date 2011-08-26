@@ -1,22 +1,24 @@
 require 'sinatra'
 require 'RMagick'
 
-set :static, true
-set :public, Proc.new {File.join(root, '_site')}
+static_path = Proc.new {File.join(root, '_site')}
 
-imagedir = "./_site/img"
+set :static, true
+set :public, static_path
+
+imagedir = "#{static_path}/img"
 
 before do
   response.headers['Cache-Control'] = 'public, max-age=31557600' # 1 year
 end
 
 not_found do
-	errorFile='_site/404/index.html'
+	errorFile='#{static_path}/404/index.html'
 	File.read(errorFile)
 end
 
 get '/' do
-  File.read(File.join('public', 'index.html'))
+  File.read(File.join(static_path, 'index.html'))
 end
 
 get "/image/*/to/*" do
