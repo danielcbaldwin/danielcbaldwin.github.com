@@ -1,7 +1,7 @@
 require "rack"
 require "rack/contrib/try_static"
 require "rack/rewrite"
-require 'app'
+require './app'
 
 use Rack::Rewrite do
   r302 '/clickability', '/projects/clickability'
