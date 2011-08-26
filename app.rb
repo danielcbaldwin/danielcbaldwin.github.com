@@ -24,7 +24,7 @@ end
 
 get '/*' do
   path = File.join(static_path, params[:splat])
-  if FileTest.exists?(path)
+  if FileTest.exists?(path) && !File.directory?(path)
     send_file path
   elseif FileTest.exists?(path + '.html')
     send_file path + '.html'
