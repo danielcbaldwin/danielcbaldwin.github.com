@@ -7,10 +7,10 @@ use Rack::Rewrite do
   r302 '/clickability', '/projects/clickability'
 end
 
-use ::Rack::TryStatic, 
-  :root => "_site",												# or _site/ where *.html are generated
-  :urls => %w[/],												# match all requests
-  :try => ['.html', 'index.html', '/index.html']				# try these postfixes sequentially
+# use ::Rack::TryStatic, 
+#   :root => "_site",												# or _site/ where *.html are generated
+#   :urls => %w[/],												# match all requests
+#   :try => ['.html', 'index.html', '/index.html']				# try these postfixes sequentially
 
 run Sinatra::Application
 

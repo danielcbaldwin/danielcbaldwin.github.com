@@ -1,6 +1,6 @@
 <article class="post">
 	<header>
-		<h2><a href="{{ site.domain }}{{ post.url }}" title="Permalink: {{ post.title }}">{{ post.title }}</a></h2>
+		<h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
 		{% for category in post.categories %}
 			<a class="category" href="/categories/{{ category }}">{{ category | capitalize }}</a>
 		{% endfor %}

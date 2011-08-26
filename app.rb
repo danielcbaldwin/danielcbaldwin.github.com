@@ -18,9 +18,10 @@ not_found do
 	File.read(errorFile)
 end
 
-# get '/' do
-#   File.read(File.join(static_path, 'index.html'))
-# end
+get '/' do
+  #File.read(File.join(static_path, 'index.html'))
+  send_file File.join(static_path, 'index.html')
+end
 # 
 # get '/*' do 
 #   path = File.join(static_path, params[:splat])
