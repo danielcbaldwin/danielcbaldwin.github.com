@@ -1,16 +1,18 @@
 <article class="post">
 	<header>
 		<h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-		{% for category in post.categories %}
-			<a class="category" href="/categories/{{ category }}">{{ category | capitalize }}</a>
-		{% endfor %}
+		<!-- {% for category in post.categories %}
+					<a class="category" href="/categories/{{ category }}">{{ category | capitalize }}</a>
+				{% endfor %} -->
 		<time datetime="{{ post.date | date:"%Y-%m-%d" }}" pubdate>{{ post.date | date_to_string }}</time>
 	</header>
-	{% if is_single %}
-		{{ content }}
-	{% else %}
-		{{ post.content }}
-	{% endif %}
+	<div class="post-content">
+		{% if is_single %}
+			{{ content }}
+		{% else %}
+			{{ post.content }}
+		{% endif %}
+	</div>
 	{% if is_single %}
 		<div id="disqus_thread"></div>
 	{% endif %}

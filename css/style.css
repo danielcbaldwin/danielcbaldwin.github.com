@@ -83,7 +83,7 @@ h2 {
 }
 
 #container {
-	width: 800px;
+	width: 650px;
 	margin: 0 auto;
 }
 
@@ -124,28 +124,28 @@ h2 {
 	float: right;
 	overflow: hidden;
 	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 #container header ul li {
 	float: left;
-	height: 40px;
+	height: 100%;
+	margin-left: 7px;
+	/*border-left: 2px solid #CCC;*/
 }
 
 #container header ul li a {
-	padding: 5px 10px;
-	margin-right: 15px;
+	margin-top: 20px;
+	padding: 5px 20px;
+/*	margin-right: 15px;*/
 	display: block;
-	border: 1px solid #CECECE;
-	-webkit-box-shadow: 2px 2px 0px 0px #e7e7e7;
+	border: 2px solid #CECECE;
+/*	-webkit-box-shadow: 2px 2px 0px 0px #e7e7e7;
 	-moz-box-shadow: 2px 2px 0px 0px #e7e7e7;
-	box-shadow: 2px 2px 0px 0px #e7e7e7;
-	height: 16px;
-	line-height: 16px;
-	position: relative;
-	font-weight: bold;
-	font-size: 12px;
+	box-shadow: 2px 2px 0px 0px #e7e7e7;*/
 	color: #444;
-	margin-top: 10px;
+	font: 700 24px "Yanone Kaffeesatz";
 }
 
 #container header ul li.rss-link a {
@@ -177,9 +177,14 @@ h2 {
 	margin-bottom: 40px;
 }
 
-#container #main section .post header {
+#container #main section .post header,
+#container #main section .page header {
 	border: 0;
 	height: auto;
+}
+
+#container #main section .page header h2 {
+	margin-bottom: 0;
 }
 
 #container #main section .post header a.category {
@@ -254,18 +259,26 @@ h2 {
 	background-color: #E8E6E6;
 }
 
-#container #main img {
+#container #main article.post .post-content img,
+#container #main article.page .page-content img {
 	margin: 15px;
-	position: relative;
-	float: left;
 }
 
-#container #main img#avatar {
+#container #main article.post .post-content img.left,
+#container #main article.page .page-content img.left {
+	position: relative;
+	float: left;
 	margin: 0 15px 15px 0;
 	border: 1px solid #CECECE;
 	-webkit-box-shadow: 2px 2px 0px 0px #e7e7e7;
 	-moz-box-shadow: 2px 2px 0px 0px #e7e7e7;
 	box-shadow: 2px 2px 0px 0px #e7e7e7;
+}
+
+#container #main article.post .post-content img.right,
+#container #main article.page .page-content img.right {
+	position: relative;
+	float: left;
 }
 
 #container #main .project-list {
@@ -279,44 +292,6 @@ h2 {
 #container #main h3 {
 	border-bottom: 2px dotted #000;
 	font-size: 18px;
-}
-
-#saveForm {
-	padding: 5px 10px;
-	margin-right: 25px;
-	display: block;
-	border: 1px solid #CECECE;
-	-webkit-box-shadow: 2px 2px 0px 0px #e7e7e7;
-	-moz-box-shadow: 2px 2px 0px 0px #e7e7e7;
-	box-shadow: 2px 2px 0px 0px #e7e7e7;
-	height: 28px;
-	line-height: 16px;
-	position: relative;
-	font-weight: bold;
-	font-size: 12px;
-	color: #444;
-	margin-top: 10px;
-	background-color: #fff;
-	width: 75px;
-}
-
-#saveForm:hover {
-	background-color: #83C203;
-	color: #fff;
-}
-
-#container #main .recaptchatable img {
-	margin: 0;
-	float: none;
-}
-
-#container #main #emf-form table {
-	width: 100%;
-}
-
-#container #main textarea {
-	width: 90%;
-	height: 200px;
 }
 
 footer {
