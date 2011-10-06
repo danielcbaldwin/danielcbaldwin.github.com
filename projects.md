@@ -1,8 +1,7 @@
 ---
-layout: default
-title: Projects List
+layout: page
+title: Projects Listing
 ---
-##Projects Listing##
 This is a listing of some of the projects that I am currently working on or have worked on.
 
 <ul class="project-list">

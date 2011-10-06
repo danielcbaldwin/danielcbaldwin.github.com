@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: page
+title: Resume
 ---
-##Resume##
 ###Summary###
 
 I am a passionate programmer in love with all things programming. I love learning new languages, frameworks, tools and approaches to overcome problems. I am always interested in new ways to stretch myself, learn more, and be the best that I can be. I love it when I am put against hard problems and am able to work them out to my benefit and to the benefit of the company that I am a part of.
