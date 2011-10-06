@@ -375,7 +375,8 @@ footer .right {
 	}
 	
 	#container #main img#avatar {
-		width: 130px;
+		width: 97%;
+		float: none;
 	}
 	
 	footer {
