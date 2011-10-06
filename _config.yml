@@ -13,7 +13,7 @@ pygments:       false
 markdown:       rdiscount
 permalink:      pretty
 
-domain:         http://danielcbaldwin-blog.heroku.com
+domain:         http://danielcbaldwin.com
 paginate:       5
 
 disqus:
