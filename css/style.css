@@ -311,13 +311,7 @@ footer .right {
 	float: right;
 }
 
-@media screen and (max-width: 1000px) {
-	#fork-on-github-ribbon {
-		display: none;
-	}
-}
-
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 670px) {
 	body {
 		margin-left: 15px;
 		margin-right: 15px;
@@ -329,20 +323,9 @@ footer .right {
 	#container header ul {
 		padding: 0;
 	}
-	
-	
-}
 
-@media screen and (max-width: 720px) {
-	#container header ul li.rss-link {
-		display: none;
-	}
-}
-
-
-@media screen and (max-width: 650px) {
 	#container header {
-		height: 130px;
+		height: 150px;
 	}
 	
 	#container header h1 {
@@ -355,7 +338,7 @@ footer .right {
 	#container header ul {
 		float: none;
 		padding: 0;
-		width: 355px;
+		width: 325px;
 		margin: 7px auto 0;
 	}
 	
@@ -364,13 +347,27 @@ footer .right {
 	}
 	
 	#container header ul li a {
-		margin: 10px 0 0;
+		margin: 0 0;
+		padding: 5px 10px;
 	}
 }
 
 @media screen and (max-width: 480px) {
+	#container header {
+		height: 137px;
+	}
+
+	#container header ul {
+		width: 290px;
+	}
+
 	#container header ul li {
-		padding: 0 0 0 5px;
+		padding: 0 0 0 3px;
+	}
+
+	#container header ul li a {
+		margin: 0 0;
+		padding: 5px 10px;
 	}
 	
 	#container header ul li a span {
@@ -378,7 +375,7 @@ footer .right {
 	}
 	
 	#container #main img#avatar {
-		width: 150px;
+		width: 130px;
 	}
 	
 	footer {
