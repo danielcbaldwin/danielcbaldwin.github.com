@@ -5,13 +5,12 @@ server_port:    4000
 base-url:       /
 source:         .
 destination:    _site
-plugins:        ./_plugins
 
 future:         true
 lsi:            false
 pygments:       false
 markdown:       rdiscount
-permalink:      pretty
+permalink:      /:year/:month/:day/:title
 
 domain:         http://danielcbaldwin.com
 paginate:       5
