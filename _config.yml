@@ -14,8 +14,3 @@ permalink:      pretty
 
 domain:         http://danielcbaldwin.com
 paginate:       5
-
-disqus:
-    id:         danielbaldwinblog
-
-exclude:        ["colors.txt", "CNAME", "config.ru", ".gems", "contact-me.html_old", "Gemfile", "Gemfile.lock", "app.rb"]
