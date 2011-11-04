@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Website as a jQuery Plugin
-category: technology
 published: true
 ---
 I recently had to build a site that ran mainly off of jQuery and I had the whole thing working from one script.js file that just had a lot of functions in it with some global functions defined at the top. The more I looked at this mess of a file the more I felt disappointed with myself that I had allowed myself to code so horribly.
