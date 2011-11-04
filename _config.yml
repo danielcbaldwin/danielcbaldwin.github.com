@@ -1,16 +1,6 @@
-safe:           false
-auto:           false
-server:         false
-server_port:    4000
-base-url:       /
-source:         .
-destination:    _site
-
 future:         true
-lsi:            false
-pygments:       false
+pygments:       true
 markdown:       rdiscount
-permalink:      date
 
 domain:         http://danielcbaldwin.com
 paginate:       30
