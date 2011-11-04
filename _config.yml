@@ -10,7 +10,7 @@ future:         true
 lsi:            false
 pygments:       false
 markdown:       rdiscount
-permalink:      pretty
+permalink:      date
 
 domain:         http://danielcbaldwin.com
-paginate:       5
+paginate:       30

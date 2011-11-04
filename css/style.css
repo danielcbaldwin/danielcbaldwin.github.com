@@ -283,6 +283,7 @@ h2 {
 
 #container #main article.post .post-social-buttons {
 	float: right;
+	margin-top: 15px;
 }
 
 #container #main .project-list {
