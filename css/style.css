@@ -281,6 +281,10 @@ h2 {
 	float: left;
 }
 
+#container #main article.post .post-content .post-social-buttons {
+	float: right;
+}
+
 #container #main .project-list {
 	
 }
