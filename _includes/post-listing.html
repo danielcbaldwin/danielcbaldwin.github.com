@@ -1,0 +1,6 @@
+<article class="post clearfix">
+	<header>
+		<h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+		<time datetime="{{ post.date | date:"%Y-%m-%d" }}" pubdate>{{ post.date | date_to_string }}</time>
+	</header>
+</article>
