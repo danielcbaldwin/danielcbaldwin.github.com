@@ -219,6 +219,33 @@ h2 {
 	border-bottom: 0;
 }
 
+#container #main section.listing ul {
+	list-style: none;
+	padding-left: 20px;
+}
+
+#container #main section.listing ul li {
+	margin: 1em 0;
+}
+
+#container #main section.listing ul li,
+#container #main section.listing ul li time {
+	color: #999;
+}
+
+#container #main section.listing ul li time {
+	/*line-height: 75px;*/
+}
+
+#container #main section.listing ul li a {
+	color: #83C203;
+	font: 24px "Yanone Kaffeesatz";
+}
+
+#container #main section.listing ul li a:hover {
+	color: #626262;
+}
+
 #container #main section.listing h2.category {
 	margin-bottom: 0;
 	padding-bottom: 5px;

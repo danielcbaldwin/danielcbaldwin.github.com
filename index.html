@@ -5,10 +5,11 @@ change_frequency: monthly
 ---
 {% assign is_home = true %}
 <section class="listing">
-	{% for post in paginator.posts %}
-		{% include post-listing.html %}
-	{% endfor %}
-	
+	<ul>
+		{% for post in paginator.posts %}
+			<li>{% include post-listing.html %}</li>
+		{% endfor %}
+	</ul>	
 	{% if paginator.total_pages > 1 %}
 		<div id="pagination">
 			{% if paginator.previous_page %}
