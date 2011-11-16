@@ -65,6 +65,10 @@ td { vertical-align: top; }
 /* ==|== primary styles =====================================================
    Author: Daniel Baldwin
    ========================================================================== */
+html {
+	background-image: url(/img/square_bg.png);
+}
+
 body {
 	font-size: 14px;
 }
