@@ -1,9 +1,6 @@
 <article class="post clearfix">
 	<header>
 		<h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-		<!-- {% for category in post.categories %}
-					<a class="category" href="/categories/{{ category }}">{{ category | capitalize }}</a>
-				{% endfor %} -->
 		<time datetime="{{ post.date | date:"%Y-%m-%d" }}" pubdate>{{ post.date | date_to_string }}</time>
 	</header>
 	<div class="post-content">
@@ -13,16 +10,4 @@
 			{{ post.content }}
 		{% endif %}
 	</div>
-	{% if is_single %}
-	<div class="post-social-buttons">
-		<!-- AddThis Button BEGIN -->
-		<div class="addthis_toolbox addthis_default_style ">
-		<a class="addthis_button_tweet"></a>
-		<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-		<a class="addthis_counter addthis_pill_style"></a>
-		</div>
-		<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4eb3860d0a1f2962"></script>
-		<!-- AddThis Button END -->
-	</div>
-	{% endif %}
 </article>

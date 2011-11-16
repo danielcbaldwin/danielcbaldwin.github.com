@@ -1,6 +1,6 @@
-future:         true
-pygments:       true
-markdown:       rdiscount
-
-domain:         http://danielcbaldwin.com
-paginate:       30
+markdown: rdiscount
+pygments: true
+permalink: /posts/:title
+auto: true
+rdiscount:
+  extensions: [smart]
