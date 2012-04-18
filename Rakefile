@@ -39,10 +39,6 @@ task :link do
   name = name.gsub(/[^a-zA-Z0-9_-]/, "").downcase
   time = Time.now.strftime("%Y-%m-%d, %H-%M-%S")
 
-  if name = 'index'
-    break
-  end
-
   File.open("_links/#{name}.md", "w+") do |file|
     file.puts <<-EOF
 ---
@@ -55,7 +51,7 @@ date: #{Time.now.strftime('%c')}
 #{comment}
     EOF
   end
-  puts "Created '_links/#{time}-#{name}.md'"
+  puts "Created '_links/#{name}.md'"
 end
 
 desc "Building Link List"
@@ -92,7 +88,7 @@ task :build do
         content = $2.strip!
      end
      
-     if meta['published'] == true
+     if meta['published'] != true
        break
      end
 
