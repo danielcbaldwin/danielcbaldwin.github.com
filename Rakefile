@@ -38,7 +38,12 @@ task :link do
   name = title.gsub(/\s+/, '-')
   name = name.gsub(/[^a-zA-Z0-9_-]/, "").downcase
   time = Time.now.strftime("%Y-%m-%d, %H-%M-%S")
-  File.open("_links/#{time}-#{name}.md", "w+") do |file|
+
+  if name = 'index'
+    break
+  end
+
+  File.open("_links/#{name}.md", "w+") do |file|
     file.puts <<-EOF
 ---
 layout: link
@@ -87,6 +92,10 @@ task :build do
         content = $2.strip!
      end
      
+     if meta['published'] == true
+       break
+     end
+
      if current_date != parsed_date
        index_content.push "<h4 class=\"date-seperator" + ((count < 1) ? " first" : "") + "\">#{parsed_date}</h4>"
        current_date = parsed_date
@@ -104,9 +113,7 @@ task :build do
 </dl>
      HTML
 
-     if meta['published'] == true
-       FileUtils.cp(file.path, File.join('links', title+ext))
-     end
+     FileUtils.cp(file.path, File.join('links', title+ext))
      count += 1
    end
     
