@@ -58,7 +58,9 @@ task :build do
    index_content = []
    count = 0
    current_date = ""
-   Dir.glob('link/*').each do |f|
+   Dir.glob('links/*').reject{|f|
+    f.gsub(/^(.*)\//, '') == 'index.html'
+   }.each do |f|
      FileUtils.rm_rf(f)
    end
    Dir.glob('_links/*').map { |file| 
@@ -94,7 +96,7 @@ task :build do
 <dl class="linklist">
   <dt>
     <a href="#{meta['link']}">#{meta['title']}</a>
-    <a href="/link/#{title}.html" class="permalink">a</a>
+    <a href="/links/#{title}.html" class="permalink">a</a>
   </dt>
   <dd>
     <p>#{content}</p>
@@ -103,7 +105,7 @@ task :build do
      HTML
 
      if meta['published'] == true
-       FileUtils.cp(file.path, File.join('link', title+ext))
+       FileUtils.cp(file.path, File.join('links', title+ext))
      end
      count += 1
    end
