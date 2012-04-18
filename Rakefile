@@ -94,7 +94,7 @@ task :build do
 <dl class="linklist">
   <dt>
     <a href="#{meta['link']}">#{meta['title']}</a>
-    <a href="http://localhost:4000/link/#{title}.html" class="permalink">a</a>
+    <a href="/link/#{title}.html" class="permalink">a</a>
   </dt>
   <dd>
     <p>#{content}</p>
