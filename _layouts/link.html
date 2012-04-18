@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{% assign post = page %}
+{% assign is_single = true %}
+<dl class="linklist">
+  <dt>
+  <a href="{{ post.link }}">{{ post.title }}</a>
+  </dt>
+  <dd>
+    <p>{{ content }}</p>
+    <p class="date"><span class="icon">c</span><em>{{ post.date | date:"%A, %d %b %Y" }}</em></p>
+  </dd>
+</dl>
