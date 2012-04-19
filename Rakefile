@@ -3,7 +3,6 @@ require 'rake/clean'
 require 'date'
 require 'fileutils'
 require 'yaml'
-require 'nokogiri'
 
 CLEAN.include "_site"
 
@@ -22,9 +21,11 @@ published: false
 title: #{title}
 date: #{Time.now.strftime('%c')}
 ---
+
     EOF
   end
   puts "Created '_posts/#{time}-#{name}.md'"
+  sh "vim _links/#{time}-#{name}.md"
 end
 
 desc "Create a Link Post"
@@ -33,11 +34,13 @@ task :link do
   title = $stdin.gets.chomp.strip
   print "Please enter in the link: "
   link = $stdin.gets.chomp.strip
-  print "Please enter in the comment: "
-  comment = $stdin.gets.chomp.strip
   name = title.gsub(/\s+/, '-')
   name = name.gsub(/[^a-zA-Z0-9_-]/, "").downcase
   time = Time.now.strftime("%Y-%m-%d, %H-%M-%S")
+  
+  if File.exists? "_links/#{name}.md"
+    break
+  end
 
   File.open("_links/#{name}.md", "w+") do |file|
     file.puts <<-EOF
@@ -48,10 +51,11 @@ title: #{title}
 link: #{link}
 date: #{Time.now.strftime('%c')}
 ---
-#{comment}
+
     EOF
   end
   puts "Created '_links/#{name}.md'"
+  sh "vim _links/#{name}.md"
 end
 
 desc "Building Link List"
